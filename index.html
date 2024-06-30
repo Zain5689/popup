@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Popup</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <button class="btn" type="submit" onclick="openPopup()">Submit</button>
+      <div class="popup">
+        <img src="ok.webp" />
+        <h2>Thank You!</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <button type="submit" onclick="closePopup()">Ok</button>
+      </div>
+    </div>
+    <script>
+      let popup = document.querySelector(".popup");
+      function openPopup() {
+        popup.classList.add("open");
+      }
+      function closePopup() {
+        popup.classList.remove("open");
+      }
+    </script>
+  </body>
+</html>
